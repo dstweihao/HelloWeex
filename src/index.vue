@@ -1,21 +1,25 @@
 <template>
   <div class="wrapper">
-    <image :src="logo" class="logo" />
-    <text class="greeting">nihao a youshendabuliao!</text>
-    <HelloWorld/>
+    <!-- <image :src="logo" class="logo" />
+    <text class="greeting">我是测试页！！!</text> -->
+    <!-- <HelloWorld/> -->
+    <Login/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
+import Login from './activity/Login.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    // HelloWorld
+    // Home
+    Login
   },
   data () {
     return {
-      logo: './web/assets/demo.jpg'
+      logo: 'https://timgsa.baidu.com/timg?image&quality=80&size=b10000_10000&sec=1528208591&di=58a2c41e0bb3e2d5375a50afaf7a9509&src=http%3A%2F%2Fimg.mp.sohu.com%2Fupload%2F20170714%2Fc471de6934d946a3a28e436b7816d806_th.png'
     }
   }
 }
@@ -27,8 +31,8 @@ export default {
     align-items: center;
   }
   .logo {
-    width: 424px;
-    height: 200px;
+    width: 600px;
+    height: 500px;
   }
   .greeting {
     text-align: center;
